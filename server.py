@@ -80,7 +80,8 @@ XXX To do:
 # (Actually, the latter is only true if you know the server configuration
 # at the time the request was made!)
 
-DEFAULT_FOLDER = 'D:/Server_received/'
+DEFAULT_FOLDER = '/path/to/folder'
+DEFAULT_PORT = 8800
 r = []
 
 __version__ = "0.6"
@@ -1579,7 +1580,7 @@ if __name__ == '__main__':
                         default='HTTP/1.0',
                         help='conform to this HTTP version '
                              '(default: %(default)s)')
-    parser.add_argument('port', default=8000, type=int, nargs='?',
+    parser.add_argument('port', default=DEFAULT_PORT, type=int, nargs='?',
                         help='bind to this port '
                              '(default: %(default)s)')
     args = parser.parse_args()
