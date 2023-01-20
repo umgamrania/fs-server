@@ -1,5 +1,5 @@
 # fs-server
-Modified Python http.server to make the user interface better and added functionality to upload files to server
+Modified Python http.server to start a server serving the files of current directory, with a better interface and the ability to upload files to the server
 
 Set the DEFAULT_FOLDER variable to be the path where you want to store the uploaded files, <br /> 
 ```DEFAULT_FOLDER = '/path/to/folder'```
